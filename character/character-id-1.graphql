@@ -1,5 +1,6 @@
-query {
-  character(id: 1 ) {
+query character($id: ID!) {
+  character(id: $id ) {
+    id
     name
     status
     species
